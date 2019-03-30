@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<title>basketball</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: #333;
+			color: #fff;
+			line-height: 1.6;
+			height: 100vh;
+			font-family: Arial,Helvetica,sans-serif;
+
+
+			/* the below tag is used to remove the scroll */ 
+            overflow: hidden;
+
+		}
+
+		.container{
+			width: 100%;
+			height: 100%;
+
+
+			/*  css for smooth scroll */
+			overflow-y: scroll;
+			scroll-behavior: smooth;
+			/*  css for smooth scroll ends */
+			/* snap  */
+            scroll-snap-type: y mandatory;
+			/* snap ends*/
+		}
+
+		.navbar{
+			position: fixed;
+			top:0;
+			display: flex;
+			z-index: 1;
+			width: 99%;
+			height: 60px;
+			background: rgba(0,0,0,0.2);
+			border-radius: 20px;
+		}
+
+		.navbar ul{
+			display: flex;
+			width: 100%;
+			list-style: none;
+			justify-content: center;
+		}
+		.navbar ul li{
+			margin: 0 1rem;
+			padding: 1rem;
+		}
+		.navbar ul li a {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #f4f4f4;
+		}
+		.navbar ul li a:hover{
+			color: skyblue;
+		}
+
+		.sidebar{
+			position: fixed;
+			display: block;
+			height: 100%;
+			width: 5%;
+			background: rgba(0,0,0,0.2);
+			border-radius: 20px;
+		}
+
+		.sidebar ul{
+			display: block;
+			list-style: none;
+			margin-top: 220px;
+			width: 3%;
+			justify-content: center;
+		}
+
+		.sidebar ul li{
+			padding: 1rem;
+		}
+		.sidebar ul li a{
+			text-decoration: none;
+			text-transform: uppercase;
+			color:#f4f4f4; 
+		}
+
+		.sidebar ul li a :hover{
+			color: skyblue;
+		}
+
+		.section{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align:center;
+			width: 100%;
+			height: 100vh;
+			/* snap continues */
+			scroll-snap-align:center;
+			/* snap ends */
+		}
+
+			.sectionone{
+			display: flex;
+			flex-direction: column;
+			align-items: right;
+			justify-content: center;
+			text-align:right;
+			width: 100%;
+
+			height: 100vh;
+			/* snap continues */
+			scroll-snap-align:center;
+			/* snap ends */
+		}
+
+
+	.section2{
+			display: flex;
+			flex-direction: column;
+			align-items: right;
+			justify-content: center;
+			text-align:left;
+			width: 100%;
+			padding-left: 75px;
+			height: 100vh;
+			/* snap continues */
+			scroll-snap-align:center;
+			/* snap ends */
+		}
+	.section3{
+			display: flex;
+			flex-direction: column;
+			align-items: left;
+			justify-content: center;
+			text-align:right;
+			width: 100%;
+			height: 100vh;
+			/* snap continues */
+			scroll-snap-align:center;
+			/* snap ends */
+		}
+
+
+
+	     h1{
+			font-size: 4rem;
+		}
+
+		p{
+			font-size: 1.5rem;
+		}
+
+		.section,#home{
+			background: url(https://cdn.nba.net/nba-drupal-prod/2017-08/SEO-image-NBA-logoman.jpg) no-repeat center center/cover ;
+		}
+
+
+		.section,#about{
+			background: url(https://www.von.gov.ng/wp-content/uploads/2018/03/basketball.jpg) no-repeat center center/cover ;
+		}
+
+
+		.section,#contact{
+			background: url(https://media0.giphy.com/media/l2QZSithIGhPdpSdq/giphy.gif) no-repeat center center/cover ;
+		}
+
+
+		.section,#service{
+			background: url(https://wonderfulengineering.com/wp-content/uploads/2016/03/Basketball-Wallpaper-7-610x343.jpg) no-repeat center center/cover ;
+		}
+
+.form{
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 5px;
+        width: 350px;   
+}
+
+.submit1{
+	padding: 1rem;
+        margin: 1rem;
+        border-radius: 5px;
+        width: 150px;
+}
+
+.transition{
+	display: flex;
+}
+
+.imgin{
+	height: 57vh;
+	padding:1rem;
+	padding-left: 100px;
+	border-radius: 100px;
+}
+
+.imgin:hover{
+	border:3px solid;
+	border-color: blue;
+	border-left: none;
+	border-top: none;
+	border-bottom:none;
+	cursor: pointer;
+}
+
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<nav class="navbar">
+		<ul>
+			<li><a  style="font-family: source sans pro" href="#home">Home</a></li>
+            <li><a  style="font-family: source sans pro" href="#about">About</a></li>
+            <li><a  style="font-family: source sans pro" href="#service">Legends</a></li> 
+            <li><a  style="font-family: source sans pro" href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<nav class="sidebar">
+		<ul>
+			<li><a href="#home"><i class="material-icons">search</i></a></li>
+            <li><a href="#about"><i class="material-icons">home</i></a></li>
+            <li><a href="#service"><i class="material-icons">favorite</i></a></li> 
+            <li><a href="#contact"><i class="material-icons">computer</i></a></li>
+		</ul>
+	</nav>
+
+	<div  class="sectionone" id="home">
+		<p>National Basketball Association                </p>
+	</div>
+
+
+	<div class="section2" id="about">
+	<h1>History</h1>
+		<p> The league was founded in New York City on June 6, 1946, <br> as the Basketball Association of America (BAA).<br> The league adopted the name National Basketball Association on <br> August 3, 1949, after merging with the competing NBL.</p>
+	</div>
+
+
+	<div class="section3" id="service">
+	<div class="transition">
+		<div class="stephencurry">
+         <img class="imgin" src="curry.png">
+		</div>
+
+		<div class="lebronjames">
+         <img class="imgin" src="james.png">
+		</div>
+		
+		<div class="jamesharden">
+         <img class="imgin" src="harden.png">
+		</div>
+		
+		<div class="kireirving">
+        <img class="imgin" src="irving.png">
+		</div>
+		
+	</div>
+	</div>
+
+
+	<div class="section" id="contact">
+	<h1 style="font-family: source sans pro ">Contact</h1>
+		<input class="form" type="text" name="text" placeholder="Name">
+		<input class="form" type="text" name="text" placeholder="remarks">
+		<input class="form" type="number" name="text" placeholder="Phone number">
+		<textarea class="form" placeholder="address"></textarea>
+		<input class="submit1" type="submit" name="submit">
+	</div>
+
+
+</div>
+</body>
+</html>
