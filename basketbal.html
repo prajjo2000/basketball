@@ -3,6 +3,8 @@
 <head>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 	<title>basketball</title>
 	<style type="text/css">
 		*{
@@ -64,6 +66,8 @@
 		}
 		.navbar ul li a:hover{
 			color: skyblue;
+			border-bottom: 2px solid ;
+		    border-color: red;
 		}
 
 		.sidebar{
@@ -94,6 +98,8 @@
 
 		.sidebar ul li a :hover{
 			color: skyblue;
+			border-left: 2px solid ;
+		    border-color: red;
 		}
 
 		.section{
@@ -115,6 +121,7 @@
 			align-items: right;
 			justify-content: center;
 			text-align:right;
+			padding-right: 75px;
 			width: 100%;
 
 			height: 100vh;
@@ -202,6 +209,9 @@
 	padding:1rem;
 	padding-left: 100px;
 	border-radius: 100px;
+	transition-duration: 1s;
+	transition-property:all;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .imgin:hover{
@@ -211,6 +221,8 @@
 	border-top: none;
 	border-bottom:none;
 	cursor: pointer;
+	transform: rotate(-10deg);
+
 }
 
 	</style>
@@ -237,7 +249,8 @@
 	</nav>
 
 	<div  class="sectionone" id="home">
-		<p>National Basketball Association                </p>
+		<p style="font-family: 'Patua One', cursive; font-size: 30px; text-transform: uppercase; margin-right:20px; ">National Basketball Association</p>
+		<p style="font-size: 30px; font-family: 'Pacifico', cursive; margin-right: 40px;">The best sport in the world<br> The most played game in asia</p>
 	</div>
 
 
@@ -275,7 +288,7 @@
 		<input class="form" type="text" name="text" placeholder="remarks">
 		<input class="form" type="number" name="text" placeholder="Phone number">
 		<textarea class="form" placeholder="address"></textarea>
-		<input class="submit1" type="submit" name="submit">
+		<input style=" background-color: #0D2A50;color: white;" class="submit1" type="submit" name="submit">
 	</div>
 
 
